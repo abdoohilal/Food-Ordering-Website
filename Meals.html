@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوجبات | قائمة الطعام</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a href="Meals.html">الوجبات</a>
+    </nav>
+
+    <main>
+        <h1>قائمة الوجبات المتوفرة</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>الرمز</th>
+                    <th>الوجبة</th>
+                    <th>السعر</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- الوجبة 1 -->
+                <tr>
+                    <td>SF-001</td>
+                    <td>وجبة سمك بوري مشوي لشخصين</td>
+                    <td>110000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-btn" data-target="details-1"></td>
+                    <td><input type="checkbox" class="select-meal" value="110000" data-name="سمك بوري"></td>
+                </tr>
+                <tr id="details-1" class="meal-details" style="display: none;">
+                    <td colspan="5">
+                        <img src="img/سمك.jpg" class="meal-img-preview">
+                        <p><strong>التصنيف:</strong> مأكولات بحرية</p>
+                        <p><strong>الصلصة:</strong> طحينة بالليمون</p>
+                        <p><strong>المكونات:</strong> سمك بوري طازج، ثوم، ليمون، زيت زيتون، أعشاب مشكلة.</p>
+                    </td>
+                </tr>
+                <!-- الوجبة 2 -->
+                <tr>
+                    <td>GR-002</td>
+                    <td>وجبة كباب حلبي مشكل</td>
+                    <td>95000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-btn" data-target="details-2"></td>
+                    <td><input type="checkbox" class="select-meal" value="95000" data-name="كباب حلبي"></td>
+                </tr>
+                <tr id="details-2" class="meal-details" style="display: none;">
+                    <td colspan="5">
+                        <img src="/img/مشوي.jpg" class="meal-img-preview">
+                        <p><strong>التصنيف:</strong> مشاوي</p>
+                        <p><strong>الصلصة:</strong> محمرة حارة</p>
+                        <p><strong>المكونات:</strong> لحم غنم، دهنة، بهارات حلبية، فلفل أحمر.</p>
+                    </td>
+                </tr>
+                <!-- الوجبة 3 -->
+                <tr>
+                    <td>PZ-003</td>
+                    <td>بيتزا إيطالية سوبر سوبريم</td>
+                    <td>70000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-btn" data-target="details-3"></td>
+                    <td><input type="checkbox" class="select-meal" value="70000" data-name="بيتزا سوبريم"></td>
+                </tr>
+                <tr id="details-3" class="meal-details" style="display: none;">
+                    <td colspan="5">
+                        <img src="img/بيتزا.jpg" class="meal-img-preview">
+                        <p><strong>التصنيف:</strong> معجنات</p>
+                        <p><strong>الصلصة:</strong> صوص طماطم ريحان</p>
+                        <p><strong>المكونات:</strong> موزاريلا، فطر، فليفلة، زيتون، سلامي بقري.</p>
+                    </td>
+                </tr>
+                <!-- الوجبة 4 -->
+                <tr>
+                    <td>CH-004</td>
+                    <td>نصف فروج مشوي على الفحم</td>
+                    <td>65000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-btn" data-target="details-4"></td>
+                    <td><input type="checkbox" class="select-meal" value="65000" data-name="فروج مشوي"></td>
+                </tr>
+                <tr id="details-4" class="meal-details" style="display: none;">
+                    <td colspan="5">
+                        <img src="img/photo-1598515214211-89d3c73ae83b.jpg" class="meal-img-preview">
+                        <p><strong>التصنيف:</strong> دواجن</p>
+                        <p><strong>الصلصة:</strong> كريم ثوم أصلي</p>
+                        <p><strong>المكونات:</strong> دجاج متبل، خلطة بهارات مشوية، بطاطا مقلية.</p>
+                    </td>
+                </tr>
+                <!-- الوجبة 5 -->
+                <tr>
+                    <td>BG-005</td>
+                    <td>وجبة برجر لحم دبل تشيز</td>
+                    <td>75000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-btn" data-target="details-5"></td>
+                    <td><input type="checkbox" class="select-meal" value="75000" data-name="برجر دبل"></td>
+                </tr>
+                <tr id="details-5" class="meal-details" style="display: none;">
+                    <td colspan="5">
+                        <img src="img/برجر.jpg" class="meal-img-preview">
+                        <p><strong>التصنيف:</strong> وجبات سريعة</p>
+                        <p><strong>الصلصة:</strong> صوص الشيف السري</p>
+                        <p><strong>المكونات:</strong> خبز بريوش، لحم بقري 100%، جبنة شيدر، مخلل.</p>
+                    </td>
+                </tr>
+                <!-- الوجبة 6 -->
+                <tr>
+                    <td>SL-006</td>
+                    <td>سلطة سيزر بالدجاج</td>
+                    <td>40000 ل.س</td>
+                    <td><input type="checkbox" class="show-details-btn" data-target="details-6"></td>
+                    <td><input type="checkbox" class="select-meal" value="40000" data-name="سلطة سيزر"></td>
+                </tr>
+                <tr id="details-6" class="meal-details" style="display: none;">
+                    <td colspan="5">
+                        <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=300" class="meal-img-preview">
+                        <p><strong>التصنيف:</strong> سلطات</p>
+                        <p><strong>الصلصة:</strong> صوص سيزر كريمي</p>
+                        <p><strong>المكونات:</strong> خس، دجاج مشوي، خبز محمص، جبنة بارميزان.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="continueBtn">متابعة الطلب</button>
+
+        <div id="customerFormContainer" style="display: none;">
+            <h2>بيانات الزبون</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label>الاسم الكامل (أحرف عربية فقط):</label>
+                    <input type="text" id="fullName" placeholder="أدخل اسمك الثلاثي" required>
+                </div>
+                <div class="form-group">
+                    <label>الرقم الوطني (إجباري - 11 خانة):</label>
+                    <input type="text" id="nationalId" maxlength="11" placeholder="01010101010" required>
+                </div>
+                <div class="form-group">
+                    <label>تاريخ الولادة (dd-mm-yyyy):</label>
+                    <input type="text" id="birthDate" placeholder="15-04-2000" >
+                </div>
+                <div class="form-group">
+                    <label>رقم الموبايل (سيريتل أو MTN):</label>
+                    <input type="text" id="mobileNumber" placeholder="09xxxxxxxx" required>
+                </div>
+                <div class="form-group">
+                    <label>البريد الإلكتروني:</label>
+                    <input type="email" id="emailAddress" placeholder="example@mail.com" required>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <button type="button" id="submitBtn">إرسال الطلب</button>
+                    <div style="clear:both;"></div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</body>
+</html>
