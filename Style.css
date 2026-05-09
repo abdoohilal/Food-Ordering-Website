@@ -31,9 +31,11 @@ nav {
   background: rgba(15,23,42,.96);
   backdrop-filter: blur(12px);
   display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:18px;
+  justify-content: center;
+  align-items: center;
+  padding: 20PX;
+
+  width: 100%;
   padding:18px 20px;
   box-shadow: var(--shadow);
 }
@@ -46,6 +48,7 @@ nav a {
   padding: 10px 18px;
   border-radius: 12px;
   transition: .3s ease;
+  align-items: center;
 }
 
 nav a:hover{
@@ -66,7 +69,7 @@ main {
 h1 {
   color: var(--primary);
   text-align:center;
-  font-size: clamp(2rem,4vw,3rem);
+  font-size: clamp(1.8rem,3.8vw,2.8rem);
   margin-bottom: 35px;
 }
 
